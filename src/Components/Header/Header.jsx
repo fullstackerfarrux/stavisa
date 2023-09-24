@@ -65,6 +65,27 @@ const Header = () => {
                 </select>
               </form>
             </div>
+            <div className="dropdown">
+              <label htmlFor="drop1">
+                <i className="fa-solid fa-bars"></i>
+              </label>
+              <input type="checkbox" id="drop1" hidden />
+
+              <div className="dropdown-menu">
+                <ul>
+                  <a href="/#vacancy">
+                    <li>Вакансия</li>
+                  </a>
+                  <a href="#tourism">
+                    <li>Туризм</li>
+                  </a>
+                  <a href="/#education">
+                    <li>Образование</li>
+                  </a>
+                  <li>О нас </li>
+                </ul>
+              </div>
+            </div>
           </main>
         </div>
       </div>

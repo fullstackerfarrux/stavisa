@@ -83,7 +83,7 @@ const SingleVacancy = () => {
         </div>
       </div>
 
-      <div id="reuqest" className="container">
+      <div id="request" className="container">
         <img src="/sign.png" alt="" />
         <form onSubmit={(e) => handleSubmit(e)}>
           <h2>Ariza topshirish</h2>
