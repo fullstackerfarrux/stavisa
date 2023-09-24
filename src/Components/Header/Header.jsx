@@ -21,7 +21,7 @@ const Header = () => {
       <div className="header">
         <div className="container">
           <main>
-            <img src="/logo.png" alt="logo" />
+            <img src="/logo.png" alt="logo" className="logo" />
             <div className="flex">
               <ul>
                 <li>
