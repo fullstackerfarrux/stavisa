@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 const Home = () => {
   const [emblaRef] = useEmblaCarousel({ loop: true }, [Autoplay()]);
   const [slider, setSlider] = useState(0);
-  let test = ["./header.png", "./turizm.png", "./vakansiya.jpg"];
+  let test = ["/header.png", "/turizm.png", "/vakansiya.jpg"];
 
   useCallback(() => {
     console.log(window.scrollY);
