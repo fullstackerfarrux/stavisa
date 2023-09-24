@@ -57,10 +57,10 @@ const Header = () => {
                   }}
                 >
                   <option value="uz" selected={cart?.language == "uz"}>
-                    Uzb
+                    Uz
                   </option>
                   <option value="ru" selected={cart?.language == "ru"}>
-                    Russian
+                    Ru
                   </option>
                 </select>
               </form>

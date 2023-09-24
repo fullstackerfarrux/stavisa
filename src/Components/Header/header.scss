@@ -49,7 +49,7 @@
       }
 
       input {
-        width: 245px;
+        width: 50px;
         height: 44px;
         border-radius: 30px;
         border: 3px solid black;
@@ -69,14 +69,14 @@
         width: 30px;
         height: 40px;
         position: relative;
-        left: 45px;
+        left: 40px;
       }
 
       select {
         border: none;
         appearance: none;
         font-size: 17px;
-        width: 160px;
+        width: 130px;
         text-align: center;
       }
     }
@@ -190,9 +190,9 @@
       }
 
       form {
-        margin-left: 150px;
+        margin-left: 0;
         position: relative;
-        display: none;
+        display: block;
 
         i {
           display: none;
@@ -204,18 +204,20 @@
 
         img {
           margin: 0 5px 0 5px;
-          width: 30px;
-          height: 40px;
+          width: 40px;
+          height: 20px;
           position: relative;
-          left: 45px;
+          left: 0;
+          top: 5px;
         }
 
         select {
           border: none;
           appearance: none;
           font-size: 17px;
-          width: 160px;
+          width: 35px;
           text-align: center;
+          background-color: #fff;
         }
       }
     }
