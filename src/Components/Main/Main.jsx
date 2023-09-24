@@ -1,8 +1,8 @@
 import React from "react";
 import Vacancy from "../Vacancy/Vacancy";
-import Tourism from "../Tourism/tourism";
-import "./main.scss";
+import Tourism from "../Tourism/Tourismo";
 import Education from "../Education/Education";
+import "./main.scss";
 
 const Main = () => {
   return (
