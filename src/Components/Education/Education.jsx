@@ -5,21 +5,32 @@ const Education = () => {
   return (
     <>
       <section id="education">
-        <h1>Образование</h1>
+        <div className="circle">
+          <div className="filter"></div>
+          <h1>Образование</h1>
+          <div className="wand"></div>
+          <img src="/right.png" alt="image" />
+        </div>
         <div className="about">
-          <img src="/about_tourizm.png" alt="image" />
-          <div className="info">
-            <h2>Huge 20% Savings on Maldives Hotels</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non
-              porro nulla sequi accusamus, consequuntur nesciunt a quam
-              provident officiis autem ducimus itaque sunt? Voluptatibus
-              molestiae cum voluptates asperiores. Similique, quasi.
-            </p>
+          <div className="container flex box">
+            <img src="/about_tourizm.png" alt="image" />
+            <div className="info">
+              <h2>Huge 20% Savings on Maldives Hotels</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non
+                porro nulla sequi accusamus, consequuntur nesciunt a quam
+                provident officiis autem ducimus itaque sunt? Voluptatibus
+                molestiae cum voluptates asperiores. Similique, quasi.
+              </p>
+            </div>
           </div>
         </div>
         <div className="container">
-          <h2>Университеты</h2>
+          <div className="circle">
+            <div className="filter"></div>
+            <h2>Университеты</h2>
+            <div className="wand"></div>
+          </div>
           <div className="university">
             <div className="child1">
               <div
@@ -80,7 +91,6 @@ const Education = () => {
               </div>
             </div>
           </div>
-          {/* <img src="./map.png" alt="image" className="map" /> */}
         </div>
       </section>
     </>

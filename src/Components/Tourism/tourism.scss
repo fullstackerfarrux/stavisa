@@ -1,14 +1,48 @@
 #tourism {
-  padding-top: 100px;
+  padding-top: 50px;
   padding-bottom: 50px;
 
-  h1 {
-    text-align: center;
-    font-family: Inter;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 700;
-    margin-bottom: 55px;
+  .circle {
+    width: 266px;
+    height: 118px;
+    margin: 0 auto;
+    position: relative;
+
+    .filter {
+      width: 266px;
+      height: 118px;
+      position: absolute;
+      background-color: rgba(238, 123, 34, 0.21);
+      border-radius: 50%;
+      background: rgba(238, 123, 34, 0.21);
+      filter: blur(58px);
+    }
+
+    h1 {
+      text-align: center;
+      font-family: Inter;
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 700;
+    }
+
+    .wand {
+      width: 40px;
+      height: 3px;
+      background-color: #ee7b22;
+      border-radius: 5px;
+      margin: 0 auto;
+      margin-top: 10px;
+      margin-bottom: 50px;
+    }
+
+    img {
+      position: absolute;
+      top: 30px;
+      right: 30px;
+      transform: rotate(280deg);
+      transform: rotateY(180deg);
+    }
   }
 
   .about {
@@ -23,31 +57,40 @@
     justify-content: center;
     align-items: center;
 
-    img {
-      width: 400px;
-      height: 350px;
-      border-radius: 20px;
-    }
+    .box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: url("/vector.png");
+      object-fit: cover;
+      background-position: bottom;
 
-    .info {
-      h2 {
-        width: 350px;
-        font-size: 30px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 47px;
-        letter-spacing: -0.72px;
-        text-align: end;
-        font-family: Inter;
-        font-style: normal;
-        font-weight: 700;
-      }
-      p {
+      img {
         width: 400px;
-        margin-top: 20px;
-        color: rgba(238, 123, 34, 0.55);
-        text-align: right;
-        margin-right: 20px;
+        height: 350px;
+        border-radius: 20px;
+      }
+
+      .info {
+        h2 {
+          width: 350px;
+          font-size: 30px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 47px;
+          letter-spacing: -0.72px;
+          text-align: end;
+          font-family: Inter;
+          font-style: normal;
+          font-weight: 700;
+        }
+        p {
+          width: 400px;
+          margin-top: 20px;
+          color: rgba(238, 123, 34, 0.55);
+          text-align: right;
+          margin-right: 20px;
+        }
       }
     }
   }
@@ -83,15 +126,40 @@
     }
   }
 
-  .choice {
-    text-align: center;
-    margin-top: 100px;
-    font-family: Inter;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 34px;
-    margin-bottom: 60px;
+  .circle {
+    width: 380px;
+    height: 118px;
+    margin: 0 auto;
+
+    .filter {
+      width: 380px;
+      height: 118px;
+      position: absolute;
+      background-color: rgba(238, 123, 34, 0.21);
+      border-radius: 50%;
+      background: rgba(238, 123, 34, 0.21);
+      filter: blur(58px);
+    }
+
+    .choice {
+      text-align: center;
+      margin-top: 100px;
+      font-family: Inter;
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 34px;
+      margin-bottom: 10px;
+    }
+    .wand {
+      width: 40px;
+      height: 3px;
+      background-color: #ee7b22;
+      border-radius: 5px;
+      margin: 0 auto;
+      margin-top: 10px;
+      margin-bottom: 50px;
+    }
   }
 
   .cards {

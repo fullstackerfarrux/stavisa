@@ -5,25 +5,36 @@ const Tourism = () => {
   return (
     <>
       <section id="tourism">
-        <h1>Туризм</h1>
+        <div className="circle">
+          <div className="filter"></div>
+          <h1>Туризм</h1>
+          <div className="wand"></div>
+          <img src="/right.png" alt="image" />
+        </div>
         <div className="about">
-          <div className="info">
-            <h2>Huge 20% Savings on Maldives Hotels</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non
-              porro nulla sequi accusamus, consequuntur nesciunt a quam
-              provident officiis autem ducimus itaque sunt? Voluptatibus
-              molestiae cum voluptates asperiores. Similique, quasi.
-            </p>
+          <div className="container flex box">
+            <div className="info">
+              <h2>Huge 20% Savings on Maldives Hotels</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non
+                porro nulla sequi accusamus, consequuntur nesciunt a quam
+                provident officiis autem ducimus itaque sunt? Voluptatibus
+                molestiae cum voluptates asperiores. Similique, quasi.
+              </p>
+            </div>
+            <img src="/about_tourizm.png" alt="image" />
           </div>
-          <img src="/about_tourizm.png" alt="image" />
         </div>
         <div className="container">
           <div className="banner">
             <h2>Plan Your Tour With Our Travel Expert</h2>
             <h4>Our Professional Experts can craft your trip genuinely</h4>
           </div>
-          <h2 className="choice">Best Choices For You</h2>
+          <div className="circle">
+            <div className="filter"></div>
+            <h2 className="choice">Best Choices For You</h2>
+            <div className="wand"></div>
+          </div>
           <div className="cards">
             <div className="card">
               <img src="/best1.png" alt="image" />

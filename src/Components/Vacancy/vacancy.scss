@@ -7,13 +7,45 @@
     rgba(248, 248, 248, 0) 17.71%
   );
 
-  h1 {
-    text-align: center;
-    font-family: Inter;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 700;
-    margin-bottom: 55px;
+  .circle {
+    width: 266px;
+    height: 118px;
+    margin: 0 auto;
+    position: relative;
+
+    .filter {
+      width: 266px;
+      height: 118px;
+      position: absolute;
+      background-color: rgba(238, 123, 34, 0.21);
+      border-radius: 50%;
+      background: rgba(238, 123, 34, 0.21);
+      filter: blur(98px);
+    }
+
+    h1 {
+      text-align: center;
+      font-family: Inter;
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 700;
+    }
+
+    .wand {
+      width: 40px;
+      height: 3px;
+      background-color: #ee7b22;
+      border-radius: 5px;
+      margin: 0 auto;
+      margin-top: 10px;
+      margin-bottom: 50px;
+    }
+
+    img {
+      position: absolute;
+      top: 30px;
+      left: -50px;
+    }
   }
 
   .about {
@@ -28,32 +60,41 @@
     justify-content: center;
     align-items: center;
 
-    img {
-      width: 400px;
-      height: 350px;
-      border-radius: 20px;
-      margin-right: 50px;
-    }
+    .box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: url("/vector.png");
+      object-fit: cover;
+      background-position: auto;
 
-    .info {
-      h2 {
-        width: 300px;
-        font-size: 30px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 47px;
-        letter-spacing: -0.72px;
-        font-family: Inter;
-        font-style: normal;
-        font-weight: 700;
-      }
-      p {
+      img {
         width: 400px;
-        margin-top: 20px;
-        color: rgba(238, 123, 34, 0.55);
-        font-family: Inter;
-        font-style: normal;
-        font-weight: 700;
+        height: 350px;
+        border-radius: 20px;
+        margin-right: 50px;
+      }
+
+      .info {
+        h2 {
+          width: 300px;
+          font-size: 30px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 47px;
+          letter-spacing: -0.72px;
+          font-family: Inter;
+          font-style: normal;
+          font-weight: 700;
+        }
+        p {
+          width: 400px;
+          margin-top: 20px;
+          color: rgba(238, 123, 34, 0.55);
+          font-family: Inter;
+          font-style: normal;
+          font-weight: 700;
+        }
       }
     }
   }
@@ -109,7 +150,7 @@
         font-size: 16px;
         font-style: normal;
         font-weight: 400;
-        line-height: 34px; /* 212.5% */
+        line-height: 34px;
         letter-spacing: -0.32px;
       }
 
@@ -149,28 +190,6 @@
         }
       }
 
-      .sale {
-        width: 42px;
-        height: 15px;
-        color: #e81414;
-        font-family: Inter;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 34px; /* 212.5% */
-        letter-spacing: -0.32px;
-      }
-
-      .price {
-        color: #000;
-        font-family: Inter;
-        font-size: 24px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 34px;
-        letter-spacing: -0.48px;
-      }
-
       .more {
         width: 120px;
         height: 40px;
@@ -179,6 +198,11 @@
         color: #fff;
         background-color: #ee7b22;
         margin-top: 10px;
+        cursor: pointer;
+
+        &:hover {
+          opacity: 0.8;
+        }
       }
 
       .sign {
@@ -189,6 +213,11 @@
         background-color: green;
         color: #fff;
         margin-top: 10px;
+        cursor: pointer;
+
+        &:hover {
+          opacity: 0.8;
+        }
       }
     }
   }
