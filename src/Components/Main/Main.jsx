@@ -1,6 +1,6 @@
 import React from "react";
 import Vacancy from "../Vacancy/Vacancy";
-import Tourism from "../Tourism/Tourismo";
+import Tourism from "../Tourism/Tourism";
 import Education from "../Education/Education";
 import "./main.scss";
 
