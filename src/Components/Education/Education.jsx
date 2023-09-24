@@ -6,19 +6,19 @@ const Education = () => {
     <>
       <section id="education">
         <h1>Образование</h1>
-        <div className="container">
-          <div className="about">
-            <img src="/about_tourizm.png" alt="image" />
-            <div className="info">
-              <h2>Huge 20% Savings on Maldives Hotels</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non
-                porro nulla sequi accusamus, consequuntur nesciunt a quam
-                provident officiis autem ducimus itaque sunt? Voluptatibus
-                molestiae cum voluptates asperiores. Similique, quasi.
-              </p>
-            </div>
+        <div className="about">
+          <img src="/about_tourizm.png" alt="image" />
+          <div className="info">
+            <h2>Huge 20% Savings on Maldives Hotels</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non
+              porro nulla sequi accusamus, consequuntur nesciunt a quam
+              provident officiis autem ducimus itaque sunt? Voluptatibus
+              molestiae cum voluptates asperiores. Similique, quasi.
+            </p>
           </div>
+        </div>
+        <div className="container">
           <h2>Университеты</h2>
           <div className="university">
             <div className="child1">

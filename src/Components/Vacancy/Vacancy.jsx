@@ -25,19 +25,19 @@ const Vacancy = () => {
     <>
       <section id="vacancy">
         <h1>Вакансия</h1>
-        <div className="container">
-          <div className="about">
-            <img src="/about_tourizm.png" alt="image" />
-            <div className="info">
-              <h2>Huge 20% Savings on Maldives Hotels</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non
-                porro nulla sequi accusamus, consequuntur nesciunt a quam
-                provident officiis autem ducimus itaque sunt? Voluptatibus
-                molestiae cum voluptates asperiores. Similique, quasi.
-              </p>
-            </div>
+        <div className="about">
+          <img src="/about_tourizm.png" alt="image" />
+          <div className="info">
+            <h2>Huge 20% Savings on Maldives Hotels</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non
+              porro nulla sequi accusamus, consequuntur nesciunt a quam
+              provident officiis autem ducimus itaque sunt? Voluptatibus
+              molestiae cum voluptates asperiores. Similique, quasi.
+            </p>
           </div>
+        </div>
+        <div className="container">
           <div className="buttons">
             <button
               onClick={() => {

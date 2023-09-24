@@ -68,13 +68,13 @@ const SingleVacancy = () => {
               {cart?.language == "uz"
                 ? vacancy?.description.uz.split("\n").map((line, index) => (
                     <li key={index}>
-                      <b>{line}</b>
+                      {line}
                       <br />
                     </li>
                   ))
                 : vacancy?.description.ru.split("\n").map((line, index) => (
                     <li key={index}>
-                      <b> {line}</b>
+                      {line}
                       <br />
                     </li>
                   ))}
