@@ -1,0 +1,143 @@
+#tourism {
+  padding-top: 100px;
+  padding-bottom: 50px;
+
+  h1 {
+    text-align: center;
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    margin-bottom: 55px;
+  }
+
+  .about {
+    width: 70%;
+    height: 350px;
+    background-color: #eee;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 300px;
+      height: 250px;
+      border-radius: 20px;
+    }
+
+    .info {
+      h2 {
+        width: 350px;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 47px;
+        letter-spacing: -0.72px;
+        text-align: end;
+      }
+      p {
+        width: 400px;
+        margin-top: 20px;
+        color: rgba(238, 123, 34, 0.55);
+        text-align: right;
+        margin-right: 20px;
+      }
+    }
+  }
+
+  .banner {
+    background-image: url("./banner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    padding: 50px;
+    height: 400px;
+    color: #fff;
+    align-items: center;
+
+    h2 {
+      width: 518px;
+      color: #fff;
+      font-family: Inter;
+      font-size: 45px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 57.5px;
+      margin: 50px 0 50px 0;
+    }
+
+    h4 {
+      color: #fff;
+      font-family: Inter;
+      font-size: 26px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 34px;
+    }
+  }
+
+  .choice {
+    text-align: center;
+    margin-top: 100px;
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 34px;
+    margin-bottom: 60px;
+  }
+
+  .cards {
+    width: 91vw;
+    display: flex;
+    padding: 20px 0;
+    padding-left: 60px;
+    overflow: hidden;
+    background-color: white;
+
+    .card {
+      width: 739px;
+      height: 298px;
+      border-radius: 30px;
+      background-color: #fff;
+      box-shadow: 0px 2px 12px -1px rgba(34, 60, 80, 0.33);
+      margin-right: 30px;
+      padding: 18px;
+      display: flex;
+
+      img {
+        border-radius: 20px;
+        margin-right: 20px;
+      }
+
+      .info {
+        h2 {
+          width: 305px;
+          color: #000;
+          font-family: Inter;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 24px;
+          letter-spacing: -0.4px;
+          margin-top: 60px;
+          margin-bottom: 10px;
+        }
+
+        p {
+          width: 318px;
+          color: rgba(238, 123, 34, 0.55);
+          font-family: Inter;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 600;
+          letter-spacing: -0.24px;
+        }
+      }
+    }
+  }
+}

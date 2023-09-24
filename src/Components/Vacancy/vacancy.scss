@@ -1,0 +1,207 @@
+#vacancy {
+  padding-top: 160px;
+  padding-bottom: 50px;
+  background: linear-gradient(
+    180deg,
+    #ead4c7 0%,
+    rgba(248, 248, 248, 0) 17.71%
+  );
+
+  h1 {
+    text-align: center;
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    margin-bottom: 55px;
+  }
+
+  .about {
+    width: 70%;
+    height: 350px;
+    background-color: #eee;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 300px;
+      height: 250px;
+      border-radius: 20px;
+      margin-right: 50px;
+    }
+
+    .info {
+      h2 {
+        width: 300px;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 47px;
+        letter-spacing: -0.72px;
+      }
+      p {
+        width: 400px;
+        margin-top: 20px;
+        color: rgba(238, 123, 34, 0.55);
+      }
+    }
+  }
+
+  .buttons {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+
+    button {
+      width: 40px;
+      height: 40px;
+      background-color: #ee7b22;
+      border: none;
+      border-radius: 5px;
+      margin-right: 10px;
+      transform: translateX(100px);
+
+      i {
+        font-size: 22px;
+      }
+    }
+  }
+
+  .cards {
+    width: 91vw;
+    display: flex;
+    padding: 20px 0;
+    padding-left: 30px;
+    overflow: hidden;
+    background-color: white;
+
+    .card {
+      width: 281px;
+      border-radius: 30px;
+      background-color: #fff;
+      box-shadow: 0px 2px 12px -1px rgba(34, 60, 80, 0.33);
+      margin-right: 50px;
+      padding: 18px;
+      transition-duration: 1s;
+
+      img {
+        width: 246px;
+        height: 158px;
+        border-radius: 30px;
+        box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.25);
+        margin-bottom: 25px;
+      }
+
+      p {
+        color: #b3b3b3;
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 34px; /* 212.5% */
+        letter-spacing: -0.32px;
+      }
+
+      .flex {
+        justify-content: space-around;
+        div {
+          width: 50px;
+          margin-top: 10px;
+
+          i {
+            margin-left: 16px;
+            color: #b3b3b3;
+          }
+
+          p {
+            color: #b3b3b3;
+            font-family: Inter;
+            font-size: 10px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 34px; /* 340% */
+            letter-spacing: -0.2px;
+            text-align: center;
+          }
+        }
+      }
+
+      ul {
+        li {
+          color: #b3b3b3;
+          font-family: Inter;
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 34px;
+          letter-spacing: -0.24px;
+        }
+      }
+
+      .sale {
+        width: 42px;
+        height: 15px;
+        color: #e81414;
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 34px; /* 212.5% */
+        letter-spacing: -0.32px;
+      }
+
+      .price {
+        color: #000;
+        font-family: Inter;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 34px;
+        letter-spacing: -0.48px;
+      }
+
+      .more {
+        width: 120px;
+        height: 40px;
+        border-radius: 10px;
+        border: none;
+        color: #fff;
+        background-color: #ee7b22;
+        margin-top: 10px;
+      }
+
+      .sign {
+        width: 120px;
+        height: 40px;
+        border-radius: 10px;
+        border: none;
+        background-color: green;
+        color: #fff;
+        margin-top: 10px;
+      }
+    }
+  }
+
+  .button {
+    width: 176px;
+    height: 53px;
+    border-radius: 30px;
+    background-color: #ee7b22;
+    border: none;
+    color: #fff;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    margin: 0 auto;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

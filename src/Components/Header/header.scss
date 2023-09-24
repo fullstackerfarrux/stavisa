@@ -1,0 +1,87 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  background-color: #fff;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: -2px 9px 15px 5px rgba(34, 60, 80, 0.33);
+
+  main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+      width: 52px;
+      height: 47px;
+      margin-right: 150px;
+    }
+
+    ul {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+
+      li {
+        color: black;
+        font-family: Inter;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        cursor: pointer;
+
+        // &:first-child {
+        //   color: #ee7b22;
+        // }
+      }
+    }
+
+    form {
+      margin-left: 150px;
+      position: relative;
+      display: flex;
+
+      i {
+        color: black;
+        position: absolute;
+        left: 20px;
+        top: 15px;
+      }
+
+      input {
+        width: 245px;
+        height: 44px;
+        border-radius: 30px;
+        border: 3px solid black;
+        background-color: transparent;
+        padding: 10px;
+        padding-left: 50px;
+        color: black;
+        font-size: 19px;
+
+        &::placeholder {
+          color: black;
+        }
+      }
+
+      img {
+        margin: 0 5px 0 5px;
+        width: 30px;
+        height: 40px;
+        position: relative;
+        left: 45px;
+      }
+
+      select {
+        border: none;
+        appearance: none;
+        font-size: 17px;
+        width: 160px;
+        text-align: center;
+      }
+    }
+  }
+}

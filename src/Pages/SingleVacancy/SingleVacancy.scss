@@ -1,0 +1,86 @@
+#vacancyid {
+  display: flex;
+  justify-content: start;
+  margin-top: 100px;
+
+  img {
+    width: 700px;
+    height: 700px;
+  }
+
+  .about {
+    margin-left: 50px;
+
+    h2 {
+      margin-top: 100px;
+      margin-bottom: 10px;
+    }
+
+    h4 {
+      margin-bottom: 10px;
+      color: grey;
+
+      i {
+        margin-right: 5px;
+      }
+    }
+
+    .description {
+      margin-top: 30px;
+      width: 500px;
+
+      ul {
+        list-style: circle;
+
+        li {
+          list-style: circle;
+        }
+      }
+    }
+  }
+}
+
+#reuqest {
+  width: 800px;
+  height: 400px;
+  background-color: #eee;
+  padding: 20px;
+  border-radius: 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+
+  img {
+    width: 400px;
+    height: 100%;
+  }
+
+  form {
+    margin-left: 50px;
+
+    h2 {
+      text-align: center;
+    }
+
+    input {
+      width: 300px;
+      height: 50px;
+      padding: 5;
+      padding-left: 10px;
+      border-radius: 10px;
+      border: none;
+      margin-top: 10px;
+      margin: 10px auto;
+    }
+
+    button {
+      width: 120px;
+      height: 40px;
+      border-radius: 10px;
+      background-color: #ee7b22;
+      border: none;
+    }
+  }
+}
