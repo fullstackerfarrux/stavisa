@@ -21,6 +21,8 @@ const Vacancy = () => {
     get();
   }, []);
 
+  console.log(window.innerWidth);
+
   return (
     <>
       <section id="vacancy">
@@ -48,14 +50,26 @@ const Vacancy = () => {
           <div className="buttons">
             <button
               onClick={() => {
-                slide > 0 ? setSlide(slide - 1) : setSlide(5);
+                window.innerWidth > 1280
+                  ? slide > 0
+                    ? setSlide(slide - 1)
+                    : setSlide(5)
+                  : slide > 0
+                  ? setSlide(slide - 1)
+                  : setSlide(7);
               }}
             >
               <i className="fa-solid fa-angle-left"></i>
             </button>
             <button
               onClick={() => {
-                slide == 5 ? setSlide(0) : setSlide(slide + 1);
+                window.innerWidth > 1280
+                  ? slide == 5
+                    ? setSlide(0)
+                    : setSlide(slide + 1)
+                  : slide == 7
+                  ? setSlide(0)
+                  : setSlide(slide + 1);
               }}
             >
               <i className="fa-solid fa-angle-right"></i>
@@ -68,7 +82,7 @@ const Vacancy = () => {
                     <div
                       className="card"
                       key={index}
-                      style={{ transform: `translateX(-${slide * 345}px)` }}
+                      style={{ transform: `translateX(-${slide * 315}px)` }}
                     >
                       <img
                         src={`${p.photo !== null ? p.photo : "/product1.png"}`}

@@ -27,3 +27,15 @@ li {
 .flex {
   display: flex;
 }
+
+@media (max-width: 1260px) {
+  .container {
+    max-width: 748px;
+  }
+}
+
+@media (max-width: 765px) {
+  .container {
+    max-width: 345px;
+  }
+}

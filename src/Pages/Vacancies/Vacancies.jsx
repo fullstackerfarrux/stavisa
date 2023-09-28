@@ -35,53 +35,39 @@ const Vacancies = () => {
                 src={`${p.photo !== null ? p.photo : "/product1.png"}`}
                 alt="image"
               />
-              <h3>{p.title}</h3>
-              <div className="flex">
-                <div>
-                  <i className="fa-solid fa-location-dot"></i>
-                  <p>{p?.country !== "" ? p.country : "country"}</p>
-                </div>
-                <div>
-                  <i className="fa-solid fa-briefcase"></i>
-                  {/* <p>{p?.job !== "" ? p.job : "job"}</p> */}
-                  <p>job</p>
-                </div>
-                <div>
-                  <i className="fa-solid fa-hand-holding-dollar"></i>
-                  {/* <p>{p?.salary !== "" ? p.salary : "salary"}</p> */}
-                  <p>salary</p>
-                </div>
-              </div>
-              <ul>
-                {console.log(p?.description.uz.split("\n"))}
-                {cart?.language == "uz"
-                  ? p?.description.uz.split("\n").map((line, index) =>
-                      index < 3 ? (
-                        <li key={index}>
-                          {line}
-                          <br />
-                        </li>
-                      ) : (
-                        ""
+              <main>
+                <h3>{p.title}</h3>
+                <ul>
+                  {console.log(p?.description.uz.split("\n"))}
+                  {cart?.language == "uz"
+                    ? p?.description.uz.split("\n").map((line, index) =>
+                        index < 3 ? (
+                          <li key={index}>
+                            {line}
+                            <br />
+                          </li>
+                        ) : (
+                          ""
+                        )
                       )
-                    )
-                  : p?.description.ru.split("\n").map((line, index) =>
-                      index < 3 ? (
-                        <li key={index}>
-                          {line}
-                          <br />
-                        </li>
-                      ) : (
-                        ""
-                      )
-                    )}
-              </ul>
-              <div className="flex">
-                <Link to={`/vacancy/${p.id}`}>
-                  <button className="more">Batafsil</button>
-                </Link>
-                <button className="sign">Ro'yxatdan o'tish</button>
-              </div>
+                    : p?.description.ru.split("\n").map((line, index) =>
+                        index < 3 ? (
+                          <li key={index}>
+                            {line}
+                            <br />
+                          </li>
+                        ) : (
+                          ""
+                        )
+                      )}
+                </ul>
+                <div className="flex">
+                  <Link to={`/vacancy/${p.id}`}>
+                    <button className="more">Batafsil</button>
+                  </Link>
+                  <button className="sign">Ro'yxatdan o'tish</button>
+                </div>
+              </main>
             </div>
           ))}
         </div>

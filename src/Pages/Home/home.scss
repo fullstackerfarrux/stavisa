@@ -113,12 +113,12 @@
 
 @media (max-width: 1280px) {
   .container {
-    width: 748px;
+    max-width: 748px;
   }
 
   .home {
-    width: 100vw;
-    height: 100vh;
+    min-width: 100vw;
+    min-height: 100vh;
     background-image: url("./header.png");
     background-size: 100vw 100vh;
     background-repeat: no-repeat;
@@ -128,13 +128,72 @@
       display: flex;
 
       .main {
+        padding-top: 120px;
+
+        h1 {
+          display: block;
+          width: 244px;
+          color: #fff;
+          font-family: IM FELL English;
+          font-size: 30px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          margin-bottom: 20px;
+        }
+
+        p {
+          width: 258px;
+          color: #fff;
+          font-family: Inter;
+          font-size: 17px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 30.5px;
+          margin-bottom: 20px;
+          display: block;
+        }
+
+        button {
+          width: 136px;
+          height: 43px;
+          border-radius: 30px;
+          background-color: #ee7b22;
+          border: none;
+          color: #fff;
+          font-family: Inter;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 355px;
+  }
+
+  .home {
+    min-width: 100%;
+    background-size: 100% 100vh;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-color: #ee7b22;
+
+    .embla__container {
+      display: flex;
+
+      .main {
         padding-top: 150px;
 
         h1 {
-          width: 444px;
+          width: 204px;
           color: #fff;
           font-family: IM FELL English;
-          font-size: 50px;
+          font-size: 24px;
           font-style: normal;
           font-weight: 400;
           line-height: normal;
@@ -142,7 +201,7 @@
         }
 
         p {
-          width: 458px;
+          width: 258px;
           color: #fff;
           font-family: Inter;
           font-size: 19px;

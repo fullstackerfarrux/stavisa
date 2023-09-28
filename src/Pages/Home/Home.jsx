@@ -19,7 +19,7 @@ const Home = () => {
     <>
       <Header />
 
-      <div className="container home" ref={emblaRef}>
+      <div className="home" ref={emblaRef}>
         <div className="embla__container">
           {test?.map((p, index) => (
             <div
