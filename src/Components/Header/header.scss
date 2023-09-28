@@ -122,6 +122,137 @@
   }
 }
 
+@media (max-width: 1920px) {
+  .container {
+    width: 1260px;
+  }
+
+  .header {
+    width: 100vw;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition-duration: 0.5s;
+    position: absolute;
+    top: 0;
+    z-index: 9999;
+
+    main {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .logo {
+        width: 52px;
+        height: 47px;
+        cursor: pointer;
+        margin-left: 50px;
+      }
+
+      ul {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+
+        li {
+          font-family: Inter;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 500;
+          cursor: pointer;
+
+          &:hover {
+            color: coral;
+          }
+        }
+      }
+
+      form {
+        margin-left: 150px;
+        position: relative;
+        display: flex;
+
+        i {
+          position: absolute;
+          left: 20px;
+          top: 15px;
+        }
+
+        input {
+          width: 200px;
+          height: 44px;
+          border-radius: 30px;
+          border: 3px solid white;
+          background-color: transparent;
+          padding: 10px;
+          padding-left: 50px;
+          font-size: 19px;
+
+          &::placeholder {
+            color: rgb(185, 189, 194);
+          }
+        }
+
+        img {
+          margin: 0 5px 0 5px;
+          width: 30px;
+          height: 40px;
+          position: relative;
+          left: 40px;
+        }
+
+        select {
+          border: none;
+          appearance: none;
+          font-size: 17px;
+          width: 130px;
+          text-align: center;
+          background-color: transparent;
+          color: white;
+          cursor: pointer;
+        }
+      }
+
+      .dropdown {
+        display: none;
+        position: relative;
+        transform: scale(1.8);
+
+        .dropdown-menu {
+          position: absolute;
+          top: 100%;
+          right: 0;
+          display: none;
+
+          ul {
+            align-items: stretch;
+            flex-direction: column;
+            background-color: #fff;
+            padding-bottom: 5px;
+
+            li {
+              font-size: 8px;
+              padding: 1em 1.5em;
+              background-color: rgba(0, 0, 0, 0.1);
+              transition: all 0.3s ease-in;
+              min-width: 150px;
+              margin: 10px;
+              &:hover {
+                background-color: rgba(0, 0, 0, 0.3);
+                text-indent: 0.5rem;
+              }
+            }
+          }
+        }
+        #drop1:checked + .dropdown-menu {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: 768px) {
   .container {
     width: 355px;

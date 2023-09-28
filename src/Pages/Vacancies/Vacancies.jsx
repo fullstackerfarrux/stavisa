@@ -43,11 +43,13 @@ const Vacancies = () => {
                 </div>
                 <div>
                   <i className="fa-solid fa-briefcase"></i>
-                  <p>{p?.job !== "" ? p.job : "job"}</p>
+                  {/* <p>{p?.job !== "" ? p.job : "job"}</p> */}
+                  <p>job</p>
                 </div>
                 <div>
                   <i className="fa-solid fa-hand-holding-dollar"></i>
-                  <p>{p?.salary !== "" ? p.salary : "salary"}</p>
+                  {/* <p>{p?.salary !== "" ? p.salary : "salary"}</p> */}
+                  <p>salary</p>
                 </div>
               </div>
               <ul>

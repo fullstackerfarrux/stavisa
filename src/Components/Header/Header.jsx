@@ -82,7 +82,7 @@ const Header = () => {
                 <li className="li">О нас </li>
               </ul>
               <form>
-                <i
+                {/* <i
                   className="fa-solid fa-magnifying-glass"
                   style={
                     scroll > 55
@@ -91,8 +91,8 @@ const Header = () => {
                       ? { color: "black" }
                       : { color: "white" }
                   }
-                ></i>
-                <input
+                ></i> */}
+                {/* <input
                   type="text"
                   placeholder="Search"
                   style={
@@ -102,7 +102,7 @@ const Header = () => {
                       ? { border: "2px solid black", color: "black" }
                       : { border: "2px solid white", color: "white" }
                   }
-                />
+                /> */}
                 {cart?.language == "ru" ? (
                   <img
                     alt="United States"

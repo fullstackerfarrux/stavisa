@@ -49,3 +49,122 @@
     }
   }
 }
+
+@media (max-width: 1920px) {
+  .container {
+    width: 1260px;
+  }
+
+  .home {
+    max-width: 100%;
+    max-height: 100vh;
+    background-image: url("./header.png");
+    background-size: 100% 100vh;
+    background-repeat: no-repeat;
+    overflow: hidden;
+
+    .embla__container {
+      display: flex;
+
+      .main {
+        padding-top: 200px;
+
+        h1 {
+          width: 444px;
+          color: #fff;
+          font-family: IM FELL English;
+          font-size: 64px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          margin-bottom: 40px;
+          margin-left: 50px;
+        }
+
+        p {
+          width: 458px;
+          color: #fff;
+          font-family: Inter;
+          font-size: 19px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 30.5px;
+          margin-bottom: 70px;
+          margin-left: 50px;
+        }
+
+        button {
+          width: 176px;
+          height: 63px;
+          border-radius: 30px;
+          background-color: #ee7b22;
+          border: none;
+          color: #fff;
+          font-family: Inter;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 700;
+          margin-left: 50px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1280px) {
+  .container {
+    width: 748px;
+  }
+
+  .home {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("./header.png");
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    overflow: hidden;
+
+    .embla__container {
+      display: flex;
+
+      .main {
+        padding-top: 150px;
+
+        h1 {
+          width: 444px;
+          color: #fff;
+          font-family: IM FELL English;
+          font-size: 50px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          margin-bottom: 40px;
+        }
+
+        p {
+          width: 458px;
+          color: #fff;
+          font-family: Inter;
+          font-size: 19px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 30.5px;
+          margin-bottom: 70px;
+        }
+
+        button {
+          width: 176px;
+          height: 63px;
+          border-radius: 30px;
+          background-color: #ee7b22;
+          border: none;
+          color: #fff;
+          font-family: Inter;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}

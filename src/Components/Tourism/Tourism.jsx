@@ -35,6 +35,22 @@ const Tourism = () => {
             <h2 className="choice">Best Choices For You</h2>
             <div className="wand"></div>
           </div>
+          <div className="buttons">
+            <button
+              onClick={() => {
+                slide > 0 ? setSlide(slide - 1) : setSlide(5);
+              }}
+            >
+              <i className="fa-solid fa-angle-left"></i>
+            </button>
+            <button
+              onClick={() => {
+                slide == 5 ? setSlide(0) : setSlide(slide + 1);
+              }}
+            >
+              <i className="fa-solid fa-angle-right"></i>
+            </button>
+          </div>
           <div className="cards">
             <div className="card">
               <img src="/best1.png" alt="image" />

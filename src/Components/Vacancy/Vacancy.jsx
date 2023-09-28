@@ -68,32 +68,13 @@ const Vacancy = () => {
                     <div
                       className="card"
                       key={index}
-                      style={{ transform: `translateX(-${slide * 330}px)` }}
+                      style={{ transform: `translateX(-${slide * 345}px)` }}
                     >
                       <img
                         src={`${p.photo !== null ? p.photo : "/product1.png"}`}
                         alt="image"
                       />
                       <h3>{p.title}</h3>
-                      <p>3Days 4Nights</p>
-                      <div className="flex">
-                        <div>
-                          <i className="fa-solid fa-plane fa-rotate-270"></i>
-                          <p>2 Flights</p>
-                        </div>
-                        <div>
-                          <i className="fa-solid fa-hotel"></i>
-                          <p>Hotel</p>
-                        </div>
-                        <div>
-                          <i className="fa-solid fa-car-side"></i>
-                          <p>3 Transfers</p>
-                        </div>
-                        <div>
-                          <i className="fa-solid fa-person-snowboarding fa-rotate-270"></i>
-                          <p>2 Activities</p>
-                        </div>
-                      </div>
                       <ul>
                         <li>. Tour Combo With Air Transport </li>
                         <li>. Ice Ski Activity and Guide</li>
@@ -112,9 +93,9 @@ const Vacancy = () => {
                 )
               : ""}
           </div>
-          <Link to={"/vacancies"} className="button">
-            More about ...
-          </Link>
+          <div className="button">
+            <Link to={"/vacancies"}>More about ...</Link>
+          </div>
         </div>
       </section>
     </>
