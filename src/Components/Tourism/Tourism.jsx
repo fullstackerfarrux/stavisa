@@ -1,7 +1,7 @@
 import React from "react";
 import "./tourism.scss";
 
-const Tourism = () => {
+const tourism = () => {
   return (
     <>
       <section id="tourism">
@@ -95,4 +95,4 @@ const Tourism = () => {
   );
 };
 
-export default Tourism;
+export default tourism;
