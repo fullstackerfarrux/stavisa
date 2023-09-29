@@ -36,34 +36,21 @@ const Vacancies = () => {
               <main>
                 <h3>{p.title}</h3>
                 <ul>
-                  {console.log(p?.description.uz.split("\n"))}
-                  {cart?.language == "uz"
-                    ? p?.description.uz.split("\n").map((line, index) =>
-                        index < 3 ? (
-                          <li key={index}>
-                            {line}
-                            <br />
-                          </li>
-                        ) : (
-                          ""
-                        )
-                      )
-                    : p?.description.ru.split("\n").map((line, index) =>
-                        index < 3 ? (
-                          <li key={index}>
-                            {line}
-                            <br />
-                          </li>
-                        ) : (
-                          ""
-                        )
-                      )}
+                  <li>{p.country}</li>
+                  <li>{p.job}</li>
+                  <li>{p.salary}</li>
                 </ul>
                 <div className="flex">
                   <Link to={`/vacancy/${p.id}`}>
-                    <button className="more">Batafsil</button>
+                    <button className="more">
+                      {cart.language == "uz" ? `Batafsil` : `Подробнее`}
+                    </button>
                   </Link>
-                  <button className="sign">Ro'yxatdan o'tish</button>
+                  <button className="sign">
+                    {cart.language == "uz"
+                      ? `Ro'yxatdan o'tish`
+                      : `Подавать заявление`}
+                  </button>
                 </div>
               </main>
             </div>

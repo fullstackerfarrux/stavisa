@@ -99,9 +99,9 @@ const Vacancy = () => {
                       />
                       <h3>{p.title}</h3>
                       <ul>
-                        <li>. Tour Combo With Air Transport </li>
-                        <li>. Ice Ski Activity and Guide</li>
-                        <li>. Return Tickets</li>
+                        <li>{p.country}</li>
+                        <li>{p.job}</li>
+                        <li>{p.salary}</li>
                       </ul>
                       <div className="flex">
                         <Link to={`/vacancy/${p.id}`}>
