@@ -1,5 +1,5 @@
-import React, { useCallback, useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import React, { useState } from "react";
+import { useSelector } from "react-redux";
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
 import Header from "../../Components/Header/Header";
@@ -8,7 +8,6 @@ import Main from "../../Components/Main/Main";
 import { Link } from "react-router-dom";
 
 const Home = () => {
-  const dispatch = useDispatch();
   const { cart } = useSelector((cart) => cart);
   const [emblaRef] = useEmblaCarousel({ loop: true }, [Autoplay()]);
   const [slider, setSlider] = useState(0);
@@ -22,10 +21,6 @@ const Home = () => {
     "/mobile_education.jpg",
     "/mobile_vacancy.jpg",
   ];
-
-  useCallback(() => {
-    console.log(window.innerWidth);
-  }, [window.scrollY]);
 
   return (
     <>
