@@ -21,8 +21,6 @@ const Vacancies = () => {
     get();
   }, []);
 
-  console.log(vacancies);
-
   return (
     <>
       <Header />

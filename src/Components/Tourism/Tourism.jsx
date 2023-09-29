@@ -1,25 +1,30 @@
 import React from "react";
+import { useSelector } from "react-redux";
 import "./tourism.scss";
 
 const Tourism = () => {
+  const { cart } = useSelector((cart) => cart);
   return (
     <>
       <section id="tourism">
         <div className="circle">
           <div className="filter"></div>
-          <h1>Туризм</h1>
+          <h1>{cart.language == "uz" ? `Turizm` : `Туризм`}</h1>
           <div className="wand"></div>
           <img src="/right.png" alt="image" />
         </div>
         <div className="about">
           <div className="container flex box">
             <div className="info">
-              <h2>Huge 20% Savings on Maldives Hotels</h2>
+              <h2>
+                {cart.language == "uz"
+                  ? `"STA VISA" bilan sayohat qiling`
+                  : `Путешествуйте с «STA VISA»`}
+              </h2>
               <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non
-                porro nulla sequi accusamus, consequuntur nesciunt a quam
-                provident officiis autem ducimus itaque sunt? Voluptatibus
-                molestiae cum voluptates asperiores. Similique, quasi.
+                {cart.language == "uz"
+                  ? `Uzoqqa borishga vaqt yoqmi? Yoki bu siz uchun mashaqqatmi? Unda bu erdagi tur paketlar to'plami siz uchundir!.`
+                  : `Пора идти далеко? Или для тебя это хлопотно? Тогда эта коллекция турпакетов для вас!`}
               </p>
             </div>
             <img src="/about_tourizm.png" alt="image" />
@@ -27,67 +32,16 @@ const Tourism = () => {
         </div>
         <div className="container">
           <div className="banner">
-            <h2>Plan Your Tour With Our Travel Expert</h2>
-            <h4>Our Professional Experts can craft your trip genuinely</h4>
-          </div>
-          <div className="circle">
-            <div className="filter"></div>
-            <h2 className="choice">Best Choices For You</h2>
-            <div className="wand"></div>
-          </div>
-          <div className="buttons">
-            <button
-              onClick={() => {
-                slide > 0 ? setSlide(slide - 1) : setSlide(5);
-              }}
-            >
-              <i className="fa-solid fa-angle-left"></i>
-            </button>
-            <button
-              onClick={() => {
-                slide == 5 ? setSlide(0) : setSlide(slide + 1);
-              }}
-            >
-              <i className="fa-solid fa-angle-right"></i>
-            </button>
-          </div>
-          <div className="cards">
-            <div className="card">
-              <img src="/best1.png" alt="image" />
-              <div className="info">
-                <h2>Huge 20% Savings on Maldives Beaches</h2>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non
-                  porro nulla sequi accusamus, consequuntur nesciunt a quam
-                  provident officiis autem ducimus itaque sunt? Voluptatibus
-                  molestiae cum voluptates asperiores. Similique, quasi.
-                </p>
-              </div>
-            </div>
-            <div className="card">
-              <img src="/best1.png" alt="image" />
-              <div className="info">
-                <h2>Huge 20% Savings on Maldives Beaches</h2>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non
-                  porro nulla sequi accusamus, consequuntur nesciunt a quam
-                  provident officiis autem ducimus itaque sunt? Voluptatibus
-                  molestiae cum voluptates asperiores. Similique, quasi.
-                </p>
-              </div>
-            </div>
-            <div className="card">
-              <img src="/best1.png" alt="image" />
-              <div className="info">
-                <h2>Huge 20% Savings on Maldives Beaches</h2>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non
-                  porro nulla sequi accusamus, consequuntur nesciunt a quam
-                  provident officiis autem ducimus itaque sunt? Voluptatibus
-                  molestiae cum voluptates asperiores. Similique, quasi.
-                </p>
-              </div>
-            </div>
+            <h2>
+              {cart.language == "uz"
+                ? `SAYOHAT QILING ROHAT OLASIZ`
+                : `ПУТЕШЕСТВУЙТЕ И НАСЛАЖДАЙТЕСЬ`}
+            </h2>
+            <h4>
+              {cart.language == "uz"
+                ? `Dengizda cho'milishni va mayin oftobda dam olishni istaysizmi? Unda bizning tur paketlarimiz to'plami siz uchun.`
+                : `Хотите искупаться в море и отдохнуть под ласковым солнцем? Тогда наши турпакеты для вас.`}
+            </h4>
           </div>
         </div>
       </section>

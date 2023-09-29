@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import "./vacancy.scss";
 import { useDispatch, useSelector } from "react-redux";
+import "./vacancy.scss";
 import { Link } from "react-router-dom";
 
 const Vacancy = () => {
@@ -21,14 +21,12 @@ const Vacancy = () => {
     get();
   }, []);
 
-  console.log(window.innerWidth);
-
   return (
     <>
       <section id="vacancy">
         <div className="circle">
           <div className="filter"></div>
-          <h1>Вакансия</h1>
+          <h1>{cart.language !== "uz" ? "Вакансия" : "Vakansiya"}</h1>
           <div className="wand"></div>
           <img src="/right.png" alt="image" />
         </div>
@@ -36,12 +34,23 @@ const Vacancy = () => {
           <div className="container flex box">
             <img src="/about_tourizm.png" alt="image" />
             <div className="info">
-              <h2>Huge 20% Savings on Maldives Hotels</h2>
+              <h2>
+                {cart.language == "uz"
+                  ? `Biz O'zbekistondagi eng yaxshi inson resurslari kompaniyasimiz`
+                  : `Мы лучшая кадровая компания в Узбекистане`}
+              </h2>
               <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non
-                porro nulla sequi accusamus, consequuntur nesciunt a quam
-                provident officiis autem ducimus itaque sunt? Voluptatibus
-                molestiae cum voluptates asperiores. Similique, quasi.
+                {cart.language == "uz"
+                  ? `STA VISA agentligi xalqaro mehnat migratsiyasi sohasida uzoq
+                yillardan buyon faoliyat yuritib kelayotgan inson resurslari
+                agentligi bo'lib, o'zining ko'p yillik faoliyati va tajribasi
+                tufayli nafaqat O'zbekistonda, balki Markaziy Osiyoda ham katta
+                mavqega erishgan. STA VISA hamkorlik agentligining
+                professionalligi va mijozlari faoliyatiga mas'uliyat bilan
+                yondashishi ushbu agentlikni xalqaro mehnat migratsiyasi
+                sohasidagi eng kuchli va ishonchli rekruting agentliklaridan
+                biriga aylantirdi.`
+                  : `Агентство STA VISA – кадровое агентство, которое много лет работает в сфере международной трудовой миграции, достигло отличного положения не только в Узбекистане, но и в Центральной Азии, благодаря своей многолетней деятельности и опыту и масштаб обслуживаемых клиентов. Профессионализм и ответственный подход Агентства международного сотрудничества STA VISA к деятельности своих клиентов сделали это агентство одним из самых сильных и надежных кадровых агентств в сфере международной трудовой миграции.`}
               </p>
             </div>
           </div>
@@ -96,9 +105,15 @@ const Vacancy = () => {
                       </ul>
                       <div className="flex">
                         <Link to={`/vacancy/${p.id}`}>
-                          <button className="more">Batafsil</button>
+                          <button className="more">
+                            {cart.language == "uz" ? `Batafsil` : `Подробнее`}
+                          </button>
                         </Link>
-                        <button className="sign">Ro'yxatdan o'tish</button>
+                        <button className="sign">
+                          {cart.language == "uz"
+                            ? `Ro'yxatdan o'tish`
+                            : `Подавать заявление`}
+                        </button>
                       </div>
                     </div>
                   ) : (
@@ -108,7 +123,11 @@ const Vacancy = () => {
               : ""}
           </div>
           <div className="button">
-            <Link to={"/vacancies"}>More about ...</Link>
+            <Link to={"/vacancies"}>
+              {cart.language == "uz"
+                ? `Hammasini ko'rish...`
+                : `Посмотреть все...`}
+            </Link>
           </div>
         </div>
       </section>

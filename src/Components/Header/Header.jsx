@@ -73,15 +73,23 @@ const Header = () => {
                   }
                 >
                   <li className="li">
-                    <a href="/#vacancy">Вакансия</a>
+                    <a href="/#vacancy">
+                      {cart.language !== "uz" ? "Вакансия" : "Vakansiya"}
+                    </a>
                   </li>
                   <li className="li">
-                    <a href="/#tourism">Туризм</a>
+                    <a href="/#tourism">
+                      {cart.language !== "uz" ? "Туризм" : "Turizm"}
+                    </a>
                   </li>
                   <li className="li">
-                    <a href="/#education">Образование</a>
+                    <a href="/#education">
+                      {cart.language !== "uz" ? "Образование" : "Ta'lim"}
+                    </a>
                   </li>
-                  <li className="li">О нас </li>
+                  <li className="li">
+                    {cart.language !== "uz" ? "О нас" : "Biz haqimizda"}
+                  </li>
                 </ul>
                 <form>
                   {cart?.language == "ru" ? (
@@ -143,15 +151,23 @@ const Header = () => {
               <div className="flex">
                 <ul>
                   <li className="li" onClick={() => setDropdown(false)}>
-                    <a href="/#vacancy">Вакансия</a>
+                    <a href="/#vacancy">
+                      {cart.language !== "uz" ? "Вакансия" : "Vakansiya"}
+                    </a>
                   </li>
                   <li className="li" onClick={() => setDropdown(false)}>
-                    <a href="/#tourism">Туризм</a>
+                    <a href="/#tourism">
+                      {cart.language !== "uz" ? "Туризм" : "Turizm"}
+                    </a>
                   </li>
                   <li className="li" onClick={() => setDropdown(false)}>
-                    <a href="/#education">Образование</a>
+                    <a href="/#education">
+                      {cart.language !== "uz" ? "Образование" : "Ta'lim"}
+                    </a>
                   </li>
-                  <li className="li">О нас </li>
+                  <li className="li">
+                    {cart.language !== "uz" ? "О нас" : "Biz haqimizda"}
+                  </li>
                 </ul>
               </div>
               <form>
