@@ -48,7 +48,7 @@ const Home = () => {
                         ? `"STA VISA" bilan sayohat qiling`
                         : index == 1
                         ? "Chet elda o'qishni istaysizmi?"
-                        : "Chet elda ishlash oson stavisa.uz"}
+                        : "Chet elda ishlash oson"}
                     </h1>
                   )}
                   {cart.language !== "uz" ? (
