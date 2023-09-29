@@ -555,7 +555,7 @@
 
     .about {
       width: 100vw;
-      height: 350px;
+      height: 100%;
       background-color: #eee;
       margin: 0 auto;
       margin-bottom: 80px;
@@ -582,11 +582,11 @@
 
         .info {
           h2 {
-            width: 200px;
+            width: 300px;
             font-size: 25px;
             font-style: normal;
             font-weight: 700;
-            line-height: 47px;
+            line-height: 27px;
             letter-spacing: -0.72px;
             font-family: Inter;
             font-style: normal;
@@ -599,7 +599,7 @@
             font-family: Inter;
             font-style: normal;
             font-weight: 700;
-            font-size: 14px;
+            font-size: 12px;
           }
         }
       }
@@ -733,7 +733,7 @@
     }
 
     .button {
-      width: 176px;
+      width: 276px;
       height: 53px;
       border-radius: 30px;
       background-color: #ee7b22;
@@ -838,11 +838,11 @@
 
         .info {
           h2 {
-            width: 200px;
+            width: 300px;
             font-size: 20px;
             font-style: normal;
             font-weight: 700;
-            line-height: 37px;
+            line-height: 30px;
             letter-spacing: -0.72px;
             font-family: Inter;
             font-style: normal;
@@ -992,7 +992,7 @@
     }
 
     .button {
-      width: 176px;
+      width: 276px;
       height: 53px;
       border-radius: 30px;
       background-color: #ee7b22;

@@ -63,16 +63,21 @@
     background-repeat: no-repeat;
     overflow: hidden;
 
-    .blur {
-      width: 100vw;
-      height: 100vh;
-      background-color: rgba(0, 0, 0, 0.288);
+    .embla__container {
+      display: flex;
 
-      .embla__container {
-        display: flex;
+      .blur {
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.288);
 
         .main {
-          padding-top: 200px;
+          padding-top: 0px;
+          width: 100vw;
+          height: 100vh;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
 
           h1 {
             width: 444px;
@@ -133,44 +138,55 @@
     .embla__container {
       display: flex;
 
-      .main {
-        padding-top: 120px;
+      .blur {
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.288);
 
-        h1 {
-          display: block;
-          width: 244px;
-          color: #fff;
-          font-family: IM FELL English;
-          font-size: 30px;
-          font-style: normal;
-          font-weight: 400;
-          line-height: normal;
-          margin-bottom: 20px;
-        }
+        .main {
+          padding-top: 0px;
+          width: 100vw;
+          height: 100vh;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
 
-        p {
-          width: 258px;
-          color: #fff;
-          font-family: Inter;
-          font-size: 17px;
-          font-style: normal;
-          font-weight: 400;
-          line-height: 30.5px;
-          margin-bottom: 20px;
-          display: block;
-        }
+          h1 {
+            display: block;
+            width: 244px;
+            color: #fff;
+            font-family: IM FELL English;
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            margin-bottom: 20px;
+          }
 
-        button {
-          width: 136px;
-          height: 43px;
-          border-radius: 30px;
-          background-color: #ee7b22;
-          border: none;
-          color: #fff;
-          font-family: Inter;
-          font-size: 18px;
-          font-style: normal;
-          font-weight: 700;
+          p {
+            width: 258px;
+            color: #fff;
+            font-family: Inter;
+            font-size: 17px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 30.5px;
+            margin-bottom: 20px;
+            display: block;
+          }
+
+          button {
+            width: 206px;
+            height: 43px;
+            border-radius: 30px;
+            background-color: #ee7b22;
+            border: none;
+            color: #fff;
+            font-family: Inter;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 700;
+          }
         }
       }
     }
@@ -192,42 +208,53 @@
     .embla__container {
       display: flex;
 
-      .main {
-        padding-top: 150px;
+      .blur {
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.288);
 
-        h1 {
-          width: 204px;
-          color: #fff;
-          font-family: IM FELL English;
-          font-size: 24px;
-          font-style: normal;
-          font-weight: 400;
-          line-height: normal;
-          margin-bottom: 40px;
-        }
+        .main {
+          padding-top: 0px;
+          width: 100vw;
+          height: 100vh;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
 
-        p {
-          width: 258px;
-          color: #fff;
-          font-family: Inter;
-          font-size: 19px;
-          font-style: normal;
-          font-weight: 400;
-          line-height: 30.5px;
-          margin-bottom: 70px;
-        }
+          h1 {
+            width: 204px;
+            color: #fff;
+            font-family: IM FELL English;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            margin-bottom: 20px;
+          }
 
-        button {
-          width: 176px;
-          height: 63px;
-          border-radius: 30px;
-          background-color: #ee7b22;
-          border: none;
-          color: #fff;
-          font-family: Inter;
-          font-size: 20px;
-          font-style: normal;
-          font-weight: 700;
+          p {
+            width: 258px;
+            color: #fff;
+            font-family: Inter;
+            font-size: 19px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 30.5px;
+            margin-bottom: 20px;
+          }
+
+          button {
+            width: 136px;
+            height: 43px;
+            border-radius: 30px;
+            background-color: #ee7b22;
+            border: none;
+            color: #fff;
+            font-family: Inter;
+            font-size: 10px;
+            font-style: normal;
+            font-weight: 700;
+          }
         }
       }
     }
