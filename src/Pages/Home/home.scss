@@ -35,7 +35,7 @@
       }
 
       button {
-        width: 176px;
+        width: 270px;
         height: 63px;
         border-radius: 30px;
         background-color: #ee7b22;
@@ -63,48 +63,54 @@
     background-repeat: no-repeat;
     overflow: hidden;
 
-    .embla__container {
-      display: flex;
+    .blur {
+      width: 100vw;
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.288);
 
-      .main {
-        padding-top: 200px;
+      .embla__container {
+        display: flex;
 
-        h1 {
-          width: 444px;
-          color: #fff;
-          font-family: IM FELL English;
-          font-size: 64px;
-          font-style: normal;
-          font-weight: 400;
-          line-height: normal;
-          margin-bottom: 40px;
-          margin-left: 50px;
-        }
+        .main {
+          padding-top: 200px;
 
-        p {
-          width: 458px;
-          color: #fff;
-          font-family: Inter;
-          font-size: 19px;
-          font-style: normal;
-          font-weight: 400;
-          line-height: 30.5px;
-          margin-bottom: 70px;
-          margin-left: 50px;
-        }
+          h1 {
+            width: 444px;
+            color: #fff;
+            font-family: IM FELL English;
+            font-size: 64px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            margin-bottom: 40px;
+            margin-left: 50px;
+          }
 
-        button {
-          width: 176px;
-          height: 63px;
-          border-radius: 30px;
-          background-color: #ee7b22;
-          border: none;
-          color: #fff;
-          font-family: Inter;
-          font-size: 20px;
-          font-style: normal;
-          font-weight: 700;
-          margin-left: 50px;
+          p {
+            width: 458px;
+            color: #fff;
+            font-family: Inter;
+            font-size: 19px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 30.5px;
+            margin-bottom: 70px;
+            margin-left: 50px;
+          }
+
+          button {
+            width: 280px;
+            height: 63px;
+            border-radius: 30px;
+            background-color: #ee7b22;
+            border: none;
+            color: #fff;
+            font-family: Inter;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 700;
+            margin-left: 50px;
+          }
         }
       }
     }

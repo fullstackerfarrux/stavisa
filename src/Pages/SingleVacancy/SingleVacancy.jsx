@@ -41,8 +41,6 @@ const SingleVacancy = () => {
       .then((data) => console.log(data));
   };
 
-  console.log(vacancy);
-
   return (
     <>
       <Header />
@@ -55,13 +53,16 @@ const SingleVacancy = () => {
         <div className="about">
           <h2>{vacancy?.title}</h2>
           <h4>
-            <i className="fa-solid fa-location-dot"></i>country
+            <i className="fa-solid fa-location-dot"></i>
+            {vacancy?.country}
           </h4>
           <h4>
-            <i className="fa-solid fa-person-digging"></i>job
+            <i className="fa-solid fa-person-digging"></i>
+            {vacancy?.job}
           </h4>
           <h4>
-            <i className="fa-solid fa-hand-holding-dollar"></i>salary
+            <i className="fa-solid fa-hand-holding-dollar"></i>
+            {vacancy?.salary}
           </h4>
           <div className="description">
             <ul>

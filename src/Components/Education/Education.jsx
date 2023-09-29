@@ -16,7 +16,11 @@ const Education = () => {
         </div>
         <div className="about">
           <div className="container flex box">
-            <img src="/about_tourizm.png" alt="image" />
+            <img
+              src="/education.png"
+              alt="image"
+              style={{ objectFit: "cover" }}
+            />
             <div className="info">
               <h2>
                 {cart.language == "uz"
