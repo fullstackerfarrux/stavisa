@@ -28,7 +28,6 @@ const Vacancy = () => {
           <div className="filter"></div>
           <h1>{cart.language !== "uz" ? "Вакансия" : "Vakansiya"}</h1>
           <div className="wand"></div>
-          <img src="/right.png" alt="image" />
         </div>
         <div className="about">
           <div className="container flex box">
@@ -59,7 +58,7 @@ const Vacancy = () => {
             </div>
           </div>
         </div>
-        <div className="container">
+        {/* <div className="container">
           <div className="buttons">
             <button
               onClick={() => {
@@ -133,7 +132,7 @@ const Vacancy = () => {
                 : `Посмотреть все...`}
             </Link>
           </div>
-        </div>
+        </div> */}
       </section>
     </>
   );

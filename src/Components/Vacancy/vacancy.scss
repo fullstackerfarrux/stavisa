@@ -762,7 +762,7 @@
     padding-bottom: 50px;
     background: linear-gradient(
       180deg,
-      #ead4c7 0%,
+      #93adef 0%,
       rgba(248, 248, 248, 0) 17.71%
     );
 
@@ -776,7 +776,7 @@
         width: 266px;
         height: 118px;
         position: absolute;
-        background-color: rgba(238, 123, 34, 0.21);
+        background-color: rgba(79, 109, 227, 0.21);
         border-radius: 50%;
         background: rgba(238, 123, 34, 0.21);
         filter: blur(98px);
@@ -793,7 +793,7 @@
       .wand {
         width: 40px;
         height: 3px;
-        background-color: #ee7b22;
+        background-color: #1a43AD;
         border-radius: 5px;
         margin: 0 auto;
         margin-top: 10px;
@@ -801,6 +801,7 @@
       }
 
       img {
+        color: #1a43AD;
         position: absolute;
         top: 30px;
         left: -00px;
@@ -851,7 +852,7 @@
           p {
             width: 300px;
             margin-top: 20px;
-            color: rgba(238, 123, 34, 0.55);
+            color: rgb(36, 163, 209);
             font-family: Inter;
             font-style: normal;
             font-weight: 700;

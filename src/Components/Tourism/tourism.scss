@@ -12,9 +12,8 @@
       width: 266px;
       height: 118px;
       position: absolute;
-      background-color: rgba(238, 123, 34, 0.21);
       border-radius: 50%;
-      background: rgba(238, 123, 34, 0.21);
+      background: rgb(34 110 238 / 21%);
       filter: blur(58px);
     }
 
@@ -29,7 +28,7 @@
     .wand {
       width: 40px;
       height: 3px;
-      background-color: #ee7b22;
+      background-color: #1a43ad;
       border-radius: 5px;
       margin: 0 auto;
       margin-top: 10px;
@@ -155,7 +154,7 @@
     .wand {
       width: 40px;
       height: 3px;
-      background-color: #ee7b22;
+      background-color: #1a43ad;
       border-radius: 5px;
       margin: 0 auto;
       margin-top: 10px;
@@ -250,7 +249,7 @@
       .wand {
         width: 40px;
         height: 3px;
-        background-color: #ee7b22;
+        background-color: #1a43ad;
         border-radius: 5px;
         margin: 0 auto;
         margin-top: 10px;
@@ -494,7 +493,7 @@
       .wand {
         width: 40px;
         height: 3px;
-        background-color: #ee7b22;
+        background-color: #1a43ad;
         border-radius: 5px;
         margin: 0 auto;
         margin-top: 10px;
@@ -712,7 +711,7 @@
   }
 
   #tourism {
-    padding-top: 50px;
+    padding-top: 30px;
     padding-bottom: 50px;
 
     .circle {
@@ -725,16 +724,15 @@
         width: 266px;
         height: 118px;
         position: absolute;
-        background-color: rgba(238, 123, 34, 0.21);
         border-radius: 50%;
-        background: rgba(238, 123, 34, 0.21);
+        background-color: rgba(44, 85, 152, 0.215);
         filter: blur(58px);
       }
 
       h1 {
         text-align: center;
         font-family: Inter;
-        font-size: 26px;
+        font-size: 30px;
         font-style: normal;
         font-weight: 700;
       }
@@ -742,7 +740,7 @@
       .wand {
         width: 40px;
         height: 3px;
-        background-color: #ee7b22;
+        background-color: #1a43ad;
         border-radius: 5px;
         margin: 0 auto;
         margin-top: 10px;
@@ -789,14 +787,13 @@
 
         .info {
           h2 {
-            width: 186px;
-            text-align: center;
+            width: 196px;
             font-size: 22px;
             font-style: normal;
             font-weight: 700;
             line-height: 47px;
             letter-spacing: -0.72px;
-            text-align: start;
+            text-align: center;
             font-family: Inter;
             font-style: normal;
             font-weight: 700;
@@ -808,7 +805,7 @@
           p {
             width: 300px;
             margin-top: 20px;
-            color: rgba(238, 123, 34, 0.55);
+            color: rgb(36, 163, 209);
             text-align: start;
             margin-right: 0px;
             font-size: 14px;
@@ -850,117 +847,6 @@
         font-style: normal;
         font-weight: 400;
         line-height: 18px;
-      }
-    }
-
-    .circle {
-      width: 380px;
-      height: 118px;
-      margin: 0 auto;
-
-      .filter {
-        width: 380px;
-        height: 118px;
-        position: absolute;
-        background-color: rgba(238, 123, 34, 0.21);
-        border-radius: 50%;
-        background: rgba(238, 123, 34, 0.21);
-        filter: blur(58px);
-      }
-
-      .choice {
-        text-align: center;
-        margin-top: 70px;
-        font-family: Inter;
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 34px;
-        margin-bottom: 10px;
-      }
-
-      .wand {
-        width: 40px;
-        height: 3px;
-        background-color: #ee7b22;
-        border-radius: 5px;
-        margin: 0 auto;
-        margin-top: 10px;
-        margin-bottom: 50px;
-      }
-    }
-
-    .buttons {
-      width: 100%;
-      display: flex;
-      justify-content: end;
-
-      button {
-        width: 40px;
-        height: 40px;
-        background-color: #ee7b22;
-        border: none;
-        border-radius: 5px;
-        margin-right: 10px;
-        transform: translateX(0);
-
-        i {
-          font-size: 22px;
-          color: black;
-        }
-      }
-    }
-
-    .cards {
-      width: 100%;
-      display: flex;
-      padding: 20px 0;
-      padding-left: 10px;
-      overflow: hidden;
-      background-color: white;
-
-      .card {
-        width: 309px;
-        height: 100%;
-        border-radius: 30px;
-        background-color: #fff;
-        box-shadow: 0px 2px 12px -1px rgba(34, 60, 80, 0.33);
-        margin-right: 30px;
-        padding: 18px;
-        display: flex;
-        flex-direction: column;
-
-        img {
-          width: 100%;
-          border-radius: 20px;
-          margin-right: 20px;
-        }
-
-        .info {
-          h2 {
-            width: 305px;
-            color: #000;
-            font-family: Inter;
-            font-size: 20px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: 24px;
-            letter-spacing: -0.4px;
-            margin-top: 30px;
-            margin-bottom: 20px;
-          }
-
-          p {
-            width: 278px;
-            color: rgba(238, 123, 34, 0.55);
-            font-family: Inter;
-            font-size: 14px;
-            font-style: normal;
-            font-weight: 600;
-            letter-spacing: -0.24px;
-            margin-bottom: 20px;
-          }
-        }
       }
     }
   }

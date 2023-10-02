@@ -1,7 +1,6 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import "./tourism.scss";
-
 const Tourism = () => {
   const { cart } = useSelector((cart) => cart);
   return (
@@ -11,7 +10,6 @@ const Tourism = () => {
           <div className="filter"></div>
           <h1>{cart.language == "uz" ? `Turizm` : `Туризм`}</h1>
           <div className="wand"></div>
-          <img src="/right.png" alt="image" />
         </div>
         <div className="about">
           <div className="container flex box">
@@ -30,7 +28,7 @@ const Tourism = () => {
             <img src="/about_tourizm.png" alt="image" />
           </div>
         </div>
-        <div className="container">
+        {/* <div className="container">
           <div className="banner">
             <h2>
               {cart.language == "uz"
@@ -43,7 +41,7 @@ const Tourism = () => {
                 : `Хотите искупаться в море и отдохнуть под ласковым солнцем? Тогда наши турпакеты для вас.`}
             </h4>
           </div>
-        </div>
+        </div> */}
       </section>
     </>
   );

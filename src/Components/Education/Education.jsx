@@ -12,7 +12,6 @@ const Education = () => {
           <div className="filter"></div>
           <h1>{cart.language == "uz" ? `Ta'lim` : `Образования`}</h1>
           <div className="wand"></div>
-          <img src="/right.png" alt="image" />
         </div>
         <div className="about">
           <div className="container flex box">

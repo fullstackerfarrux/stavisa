@@ -37,28 +37,19 @@ const Header = () => {
       {!dropdown ? (
         <div
           className="header"
-          style={
-            scroll > 55
-              ? {
-                  position: "sticky",
-                  backgroundColor: "#fff",
-                  boxShadow: "-2px 9px 15px 5px rgba(34, 60, 80, 0.33)",
-                }
-              : window.location.pathname !== "/"
-              ? {
-                  position: "sticky",
-                  backgroundColor: "#fff",
-                  boxShadow: "-2px 9px 15px 5px rgba(34, 60, 80, 0.33)",
-                }
-              : {
-                  position: "absolute",
-                  backgroundColor: "transparent",
-                  boxShadow: "none",
-                }
-          }
+          style={{
+            position: "sticky",
+            backgroundColor: "#1a43ad",
+            boxShadow: "-2px 9px 15px 5px rgba(34, 60, 80, 0.33)",
+          }}
         >
           <div className="container">
             <main>
+              <div className="dropdown">
+                <label htmlFor="drop1" onClick={() => setDropdown(true)}>
+                  <i class="fa-solid fa-bars-staggered fa-rotate-180"></i>
+                </label>
+              </div>
               <Link to={"/"}>
                 <img src="/logo1.png" alt="logo" className="logo" />
               </Link>
@@ -69,7 +60,7 @@ const Header = () => {
                       ? { color: "black" }
                       : window.location.pathname !== "/"
                       ? { color: "black" }
-                      : { color: "white" }
+                      : { color: "black" }
                   }
                 >
                   <li className="li">
@@ -111,10 +102,10 @@ const Header = () => {
                     }}
                     style={
                       scroll > 55
-                        ? { color: "black" }
+                        ? { color: "black", backgroundColor: "transparent" }
                         : window.location.pathname !== "/"
                         ? { color: "black" }
-                        : { color: "white", backgroundColor: "transparent" }
+                        : { color: "black", backgroundColor: "transparent" }
                     }
                   >
                     <option value="uz" selected={cart?.language == "uz"}>
@@ -125,11 +116,6 @@ const Header = () => {
                     </option>
                   </select>
                 </form>
-              </div>
-              <div className="dropdown">
-                <label htmlFor="drop1" onClick={() => setDropdown(true)}>
-                  <i class="fa-solid fa-bars-staggered fa-rotate-180"></i>
-                </label>
               </div>
             </main>
           </div>

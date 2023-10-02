@@ -200,7 +200,8 @@
 
   .home {
     min-width: 100%;
-    background-size: 100% 100vh;
+    min-height: 400px;
+    background-size: 100% 400px;
     background-repeat: no-repeat;
     overflow: hidden;
     background-color: #fff;
@@ -210,13 +211,13 @@
 
       .blur {
         width: 100vw;
-        height: 100vh;
-        background-color: rgba(0, 0, 0, 0.288);
+        height: 400px;
+        background-color: rgba(0, 0, 0, 0.158);
 
         .main {
           padding-top: 0px;
           width: 100vw;
-          height: 100vh;
+          height: 400px;
           display: flex;
           flex-direction: column;
           justify-content: center;
@@ -243,19 +244,55 @@
             margin-bottom: 20px;
           }
 
-          button {
-            width: 136px;
-            height: 43px;
-            border-radius: 30px;
-            background-color: #ee7b22;
-            border: none;
-            color: #fff;
-            font-family: Inter;
-            font-size: 10px;
-            font-style: normal;
-            font-weight: 700;
+          .buttons {
+            display: flex;
+            position: absolute;
+            bottom: 20px;
+
+            .more {
+              width: 120px;
+              height: 40px;
+              border-radius: 10px;
+              border: none;
+              color: #fff;
+              background-color: #1a43ad;
+              margin-top: 10px;
+              margin-left: 10px;
+              cursor: pointer;
+
+              &:hover {
+                opacity: 0.8;
+              }
+            }
+
+            .sign {
+              width: 180px;
+              height: 40px;
+              border-radius: 10px;
+              border: none;
+              background-color: green;
+              color: #fff;
+              margin-top: 10px;
+              margin-left: 10px;
+              cursor: pointer;
+
+              &:hover {
+                opacity: 0.8;
+              }
+            }
           }
         }
+      }
+    }
+    .dots {
+      width: 200px;
+      height: 30px;
+      background-color: #ee7b22;
+
+      .dot {
+        width: 20px;
+        height: 20px;
+        background-color: #1a43ad;
       }
     }
   }

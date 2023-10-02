@@ -3,6 +3,7 @@ import Vacancy from "../Vacancy/Vacancy";
 import Tourism from "../Tourism/Tourism";
 import Education from "../Education/Education";
 import "./main.scss";
+import AboutUs from "../AboutUs/AboutUs";
 
 const Main = () => {
   return (
@@ -10,6 +11,7 @@ const Main = () => {
       <Vacancy />
       <Tourism />
       <Education />
+      <AboutUs />
     </>
   );
 };
