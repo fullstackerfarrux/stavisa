@@ -51,7 +51,7 @@ const Header = () => {
                 </label>
               </div>
               <Link to={"/"}>
-                <img src="/logo1.png" alt="logo" className="logo" />
+                <img src="/testlogo.png" alt="logo" className="logo" />
               </Link>
               <div className="flex">
                 <ul
@@ -102,10 +102,10 @@ const Header = () => {
                     }}
                     style={
                       scroll > 55
-                        ? { color: "black", backgroundColor: "transparent" }
+                        ? { color: "white", backgroundColor: "transparent" }
                         : window.location.pathname !== "/"
                         ? { color: "black" }
-                        : { color: "black", backgroundColor: "transparent" }
+                        : { color: "white", backgroundColor: "transparent" }
                     }
                   >
                     <option value="uz" selected={cart?.language == "uz"}>

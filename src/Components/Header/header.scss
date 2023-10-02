@@ -409,8 +409,8 @@
       align-items: center;
 
       .logo {
-        width: 52px;
-        height: 52px;
+        width: 82px;
+        height: 82px;
         margin-right: 0px;
         border-radius: 50%;
       }
@@ -421,6 +421,7 @@
         transform: scale(1.8);
         margin-left: 0px;
         margin-right: 0px;
+        color: white;
       }
 
       ul {
@@ -456,6 +457,7 @@
           font-size: 17px;
           width: 30px;
           text-align: center;
+          color: white;
           background-color: #fff;
         }
       }
