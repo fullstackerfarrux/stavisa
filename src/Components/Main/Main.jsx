@@ -4,6 +4,7 @@ import Tourism from "../Tourism/Tourism";
 import Education from "../Education/Education";
 import "./main.scss";
 import AboutUs from "../AboutUs/AboutUs";
+import Footer from "../Footer/Footer";
 
 const Main = () => {
   return (
@@ -12,6 +13,7 @@ const Main = () => {
       <Tourism />
       <Education />
       <AboutUs />
+      <Footer />
     </>
   );
 };
