@@ -79,7 +79,9 @@ const Header = () => {
                     </a>
                   </li>
                   <li className="li">
-                    {cart.language !== "uz" ? "О нас" : "Biz haqimizda"}
+                    <a href="/#aboutus">
+                      {cart.language !== "uz" ? "О нас" : "Biz haqimizda"}
+                    </a>
                   </li>
                 </ul>
                 <form>
