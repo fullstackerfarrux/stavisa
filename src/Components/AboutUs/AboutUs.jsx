@@ -57,7 +57,7 @@ const AboutUs = () => {
                 className="fa-solid fa-address-card"
                 style={{ color: "#002952" }}
               ></i>
-              <p>5083 +</p>
+              <p>4645 +</p>
               <h3>
                 {cart.language == "uz"
                   ? `Ro'xatga olingan`
@@ -69,7 +69,7 @@ const AboutUs = () => {
                 class="fa-solid fa-id-card-clip"
                 style={{ color: "#B71414" }}
               ></i>
-              <p>2316 +</p>
+              <p>2157 +</p>
               <h3>{cart.language == "uz" ? `Visa` : `Виза`}</h3>
             </div>
           </div>
@@ -79,7 +79,7 @@ const AboutUs = () => {
                 className="fa-solid fa-earth-americas"
                 style={{ color: "#002952" }}
               ></i>
-              <p>567 +</p>
+              <p>412 +</p>
               <h3>{cart.language == "uz" ? `Vakansiya` : `Вакансии`}</h3>
             </div>
             <div className="partner">
@@ -87,7 +87,7 @@ const AboutUs = () => {
                 className="fa-solid fa-handshake-simple"
                 style={{ color: "#B71414" }}
               ></i>
-              <p>316 +</p>
+              <p>460 +</p>
               <h3>{cart.language == "uz" ? `Hamkorlar` : `Партнеры`}</h3>
             </div>
           </div>
